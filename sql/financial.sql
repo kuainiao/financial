@@ -3,7 +3,7 @@ Navicat MySQL Data Transfer
 
 Source Server         : tongtai
 Source Server Version : 50723
-Source Host           : 192.168.1.249:3306
+Source Host           : ***.*.***:3306
 Source Database       : financial
 
 Target Server Type    : MYSQL

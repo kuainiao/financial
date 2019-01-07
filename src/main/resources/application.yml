@@ -44,9 +44,9 @@ log:
 spring:
   profiles: local
   datasource:
-    url: jdbc:mysql://192.168.1.249:3306/financial?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    url: jdbc:mysql://***.***.1.***:3306/financial?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
-    password: Aa666666
+    password: 123456
     db-name: financial
     filters: wall,mergeStat
 
@@ -56,11 +56,11 @@ guns:
     open: true
     dataConnectionPropertiesList:
     dataSourceName: dataSourceBiz
-    url: jdbc:mysql://192.168.1.249:3306/wjhssb?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    url: jdbc:mysql://***.***.1.***:3306/wjhssb?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
-    password: Aa666666
+    password: 123456
 #  dataSourceName: dataSourceBiz1
-#    url: jdbc:mysql://192.168.1.249:3306/wjhssb?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+#    url: jdbc:mysql://***.***.1.***:3306/wjhssb?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
 #    username: root
 #    password: Aa666666
 #    - dataSourceBiz
@@ -71,9 +71,9 @@ guns:
 spring:
   profiles: dev
   datasource:
-    url: jdbc:mysql://192.168.1.249:3306/financial?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    url: jdbc:mysql://***.***.1.***:3306/financial?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
     username: root
-    password: Aa666666
+    password: 123456
     db-name: financial
     filters: wall,mergeStat
 
