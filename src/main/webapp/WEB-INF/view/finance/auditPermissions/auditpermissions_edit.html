@@ -1,0 +1,42 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                    <input id="id" name="" value="${item.id}"  type="hidden"/>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">制单人</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="preparedBy" name="preparedBy">
+                                <option value="${shiro.getUser().name}">${shiro.getUser().name}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">审核人</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="approvalPeople" name="approvalPeople">
+                                <option value="${item.approvalPeople}">${item.approvalPeople}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="AuditpermissionsInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="AuditpermissionsInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/finance/auditPermissions/auditpermissions_info.js"></script>
+@}

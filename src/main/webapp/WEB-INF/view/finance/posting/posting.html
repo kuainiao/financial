@@ -1,0 +1,29 @@
+@layout("/common/_container.html"){
+<div class="row">
+    <div class="col-sm-12" style="position: absolute;z-index: 100">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>凭证过账功能</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <!--<#button name="搜索" icon="fa-search" clickFun="Entry.search()"/>-->
+                            </div>
+                        </div>
+                        <div class="hidden-xs" id="PostingTableToolbar" role="group">
+                            <#button name="过账" icon="fa-submit" clickFun="Posting.openPosting()" space="true"/>
+                            <#HoverPage name="搜索" posting="true" clickFun="Posting.openPostingHover()" clickRemove="Posting.openPostingclickRemove()" clickSubmit="Posting.openPostingclickSubmit()" id="hoverpage" space="true"/>
+                        </div>
+                        <#table id="PostingTable"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/finance/posting/posting.js"></script>
+<script src="${ctxPath}/static/modular/finance/common/entry-bootstrap-table.js"></script>
+@}

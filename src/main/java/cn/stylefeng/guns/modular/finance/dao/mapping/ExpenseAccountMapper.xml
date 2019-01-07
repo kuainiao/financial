@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.finance.dao.ExpenseAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.finance.model.ExpenseAccount">
+        <id column="id" property="id" />
+        <result column="account_code" property="accountCode" />
+        <result column="subiect_name" property="subiectName" />
+        <result column="superior_code" property="superiorCode" />
+        <result column="account_category" property="accountCategory" />
+        <result column="balance_direction" property="balanceDirection" />
+        <result column="other_accounting" property="otherAccounting" />
+        <result column="contacts_dnit" property="contactsDnit" />
+        <result column="department" property="department" />
+        <result column="staff" property="staff" />
+        <result column="STATUS" property="status" />
+        <result column="cost_type" property="costType"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, account_code, subiect_name, superior_code, account_category, balance_direction, other_accounting, contacts_dnit, department, staff, STATUS
+    </sql>
+
+    <select id="selectByParent" resultMap="BaseResultMap">
+      select * from cer_expense_account where superior_code = #{code} and status = 0
+    </select>
+
+    <select id="selectByCode" resultMap="BaseResultMap">
+        select * from cer_expense_account where account_code = #{code} and status = 0
+    </select>
+
+    <update id="deleteByIdManual">
+        UPDATE cer_expense_account SET STATUS = '1' WHERE id=#{id}
+    </update>
+
+    <update id="edit">
+        update
+           cer_expense_account
+        set
+            subiect_name=#{subiectName},
+            account_category=#{accountCategory},
+            balance_direction=#{balanceDirection},
+            other_accounting=#{otherAccounting},
+            contacts_dnit=#{contactsDnit},
+            department=#{department},
+            staff=#{staff},
+            cost_type=#{costType}
+        where id = #{id}
+    </update>
+    <!--<select id="tree" resultType="cn.stylefeng.guns.core.common.node.ZTreeNode">
+           SELECT
+              account_code as id,
+              superior_code AS pId,
+              subiect_name AS NAME,
+              (
+              CASE
+                  WHEN (superior_code = 0 OR superior_code IS NULL) THEN
+                      'true'
+                  ELSE
+                      'false'
+                      END
+              ) AS isOpen
+           FROM
+                cer_expense_account
+       <where>
+           superior_code != 0
+         and superior_code = 0
+       </where>
+   </select>-->
+
+
+    <select id="tree" resultType="cn.stylefeng.guns.core.common.node.SubjectNode">
+        SELECT
+        id as subjectId,
+        account_code as id,
+        superior_code AS pId,
+        subiect_name AS NAME,
+        other_accounting as accounting,
+        contacts_dnit as contactsDnit,
+        department ,
+        staff,
+        (
+        CASE
+        WHEN (superior_code = 0 OR superior_code IS NULL) THEN
+        'true'
+        ELSE
+        0
+        END
+        ) AS open
+        FROM
+        cer_expense_account
+        <where>
+            superior_code != 0
+            <if test="_parameter != null and _parameter != ''">
+                and superior_code = #{pId}
+            </if>
+
+        </where>
+    </select>
+
+ <select id="treeEa" resultType="cn.stylefeng.guns.core.common.node.ZTreeNode">
+     select id as accountId, account_code as id,superior_code as pId,subiect_name as name,
+     (
+      CASE
+      WHEN (superior_code = 0 OR superior_code IS NULL) THEN
+      'true'
+      ELSE
+     'false'
+     END
+     ) as isOpen from cer_expense_account
+ </select>
+
+    <select id="selectByParentList" resultMap="BaseResultMap">
+        SELECT * from cer_expense_account WHERE superior_code LIKE CONCAT(#{id},'%') and STATUS=0
+    </select>
+
+</mapper>

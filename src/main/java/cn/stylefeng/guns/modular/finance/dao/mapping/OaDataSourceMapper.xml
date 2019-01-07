@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.finance.dao.OaDataMapper">
+
+    <select id="listMap" resultType="map">
+        SELECT
+            NAME ,
+            BIANMA
+        FROM
+            ${libraryName}.oa_department
+        WHERE
+            STATE = #{state} AND STATUS = '1'
+    </select>
+    <!--部门-->
+    <select id="listMapCompany" resultType="map">
+        SELECT
+            de.NAME,
+            de.BIANMA
+        FROM
+            ${libraryName}.oa_department AS d
+            LEFT JOIN wjhssb.oa_department AS de ON d.DEPARTMENT_ID = de.PARENT_ID
+        WHERE
+            d.BIANMA = #{bianma} AND de.STATUS = '1'
+    </select>
+    <!--职员-->
+    <select id="listMapClerk" resultType="map">
+        SELECT
+            s.NAME,
+            s.BIANMA
+        FROM
+            ${libraryName}.oa_staff AS s
+            LEFT JOIN wjhssb.oa_department AS de ON s.DEPARTMENT_ID = de.DEPARTMENT_ID
+        WHERE
+            de.BIANMA = #{bianma} AND s.STATUS_OUT = '1'
+    </select>
+</mapper>

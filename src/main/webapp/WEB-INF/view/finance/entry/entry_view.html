@@ -1,0 +1,249 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+            <div class="row">
+                <!--该DIV 用于展示保存，预览，打印，插入，删除，复原功能键展示-->
+                <div style="width: 100%;height: 8%;">
+                    <table style="width: 100%;height: 8%;font-weight: bold;"
+                           cellspacing="0">
+                        <tr>
+                            <td style="text-align: center;font-size: 28px;color: black;">
+                                记账凭证
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--该DIV 用于展示凭证字，凭证号，顺序号等字段-->
+                <div style="width: 100%;height: 8%;margin-top: 10px;">
+                    <table style="width: 100%;height: 8%;font-weight: bold;"
+                           cellspacing="0">
+                        <tr>
+                            <td style="width: 8%;">
+                                <input id="hideDocumentWord" type="hidden"
+                                       value="${entrySchedule[0].document_word}">
+                                <select id="documentWord" name="documentWord"
+                                        class="addglm-table-title-one"
+                                        style="width: 60%;height: 80%;margin-left: 12%;"
+                                        disabled="disabled">
+                                    <option value="1">记</option>
+                                    <option value="2">收</option>
+                                    <option value="3">付</option>
+                                    <option value="4">转</option>
+                                </select> 字
+                            </td>
+                            <td style="width: 10%;">
+                                <input readonly="readonly" id="documentNumber"
+                                       name="documentNumber"
+                                       value="${entrySchedule[0].document_number}"
+                                       onkeyup="value=value.replace(/[^\d]/g,'')"
+                                       style="border-radius: 10px;border: 1px #ccc solid;text-indent: 5px;width: 50px;
+                                       height: 80%;margin-left: 10px;"
+                                       type="text" maxlength="5"> 号
+                            </td>
+                            <td style="width: 15%;">
+                                <!-- 信息警告消息的上下文按钮 -->
+                                <button style="margin-left: 15%;" type="button"
+                                        class="btn btn-info btn-xs">保存
+                                </button>
+                                <button type="button"
+                                        class="btn btn-info btn-xs">预览
+                                </button>
+                                <button type="button"
+                                        class="btn btn-info btn-xs">打印
+                                </button>
+                            </td>
+                            <td style="text-align: center;width: 28%;">
+                                日期:&nbsp;&nbsp;<input disabled="disabled"
+                                                      style="border-radius: 10px;border: 1px #ccc solid;text-indent: 5px;
+                                                      width: 36%;height: 90%;text-align: center;background-color: white"
+                                                      type="text"
+                                                      name="businessDate"
+                                                      id="businessDate"
+                                                      value="${tool.dateType(entrySchedule[0].business_date)}"/>
+                                &nbsp;&nbsp;第<input readonly="readonly"
+                                                    style="border-width: 0;width: 10%;height: 90%;text-align: center;"
+                                                    id="period" name="period"
+                                                    value="${entrySchedule[0].period}"
+                                                    type="text">期
+                                <input type="hidden" name="id" id="id"
+                                       value="${entrySchedule[0].id}">
+                            </td>
+                            <td style="width: 15%;">
+                                <button style="margin-left: 1%" type="button"
+                                        class="btn btn-info btn-xs">插入
+                                </button>
+                                <button type="button"
+                                        class="btn btn-info btn-xs">删除
+                                </button>
+                                <button type="button"
+                                        class="btn btn-info btn-xs">平衡
+                                </button>
+                            </td>
+                            <td style="width: 12%;">顺序号:<input
+                                    readonly="readonly" id="sequenceNumber"
+                                    name="sequenceNumber"
+                                    value="${entrySchedule[0].sequence_number}"
+                                    onkeyup="value=value.replace(/[^\d]/g,'')"
+                                    style="border-radius: 10px;border: 1px #ccc solid;text-indent: 5px;width: 50px;
+                                    height: 80%;margin-left: 10px;" type="text" maxlength="5">
+                            </td>
+                            <td style="width: 12%;">单据数: <input
+                                    readonly="readonly" id="documentsNumber"
+                                    name="documentsNumber"
+                                    value="${entrySchedule[0].documents_number}"
+                                    onkeyup="value=value.replace(/[^\d]/g,'')"
+                                    style="border-radius: 10px;border: 1px #ccc solid;text-indent: 5px;width: 50px;
+                                    height: 80%;" type="text" maxlength="5"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--table主要用于会计科目及金额的添加-->
+                <table id="subjectTable"
+                       style="width: 100%;font-weight: bold;color: black;margin-top: 20px;"
+                       cellspacing="0">
+                    <thead style="text-align: center;font-size: 16px;">
+                    <tr style="background-color: #f1f2f7;border-radius: 10px;">
+                        <th style="text-align:left;height: 40px;width: 40%;padding: 0 5px">
+                            <i class="fa fa-th-large"
+                               style="color: #0557b2"></i> 会计科目
+                        </th>
+                        <th style="text-align: left;height: 40px;width: 20%;padding: 0 5px">
+                            <i class="fa fa-file" style="color:#0557b2 "></i> 摘要
+                        </th>
+                        <th style="text-align: left;height: 40px;width: 20%;padding: 0 5px">
+                            <i class="fa fa-credit-card"
+                               style="color:#0557b2 "></i> 借方金额
+                        </th>
+                        <th style="text-align: left;height: 40px;width: 20%;padding: 0 5px">
+                            <i class="fa fa-institution"
+                               style="color:#0557b2"></i> 贷方金额
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @for(entry in entrySchedule){
+                    <tr style="border-bottom: 1px #ccc solid">
+                        <td style="height: 40px;width: 40%">
+                            <input readonly="readonly"
+                                   style="width:100%;height:40px;border: 0px;"
+                                   type="hidden" name="expenseAccount"
+                                   value="${entry.expense_account}"/>
+                            <textarea readonly="readonly"
+                                      style="width:100%;height: 40px;border: none;overflow: hidden; resize:none;
+                                      line-height: 40px;">${entry.expense_account}
+                            </textarea>
+                        </td>
+                        <td style="height: 40px;width: 30%">
+                            <input
+                                readonly="readonly" type="hidden" id="Sid"
+                                name="Sid" value="${entry.Sid}"/>
+                            <textarea
+                                readonly="readonly"
+                                style="width:100%;height:40px;border: none;resize:none; padding: 10px; margin-top: 5px;"
+                                name="summary"
+                                value="">${entry.summary}
+                            </textarea>
+                        </td>
+                        <td style="height: 40px;width: 15%">
+                            <input
+                                readonly="readonly" maxlength="10"
+                                style="width:100%;height:45px;border: 0px;"
+                                type="text" name="debitAmount"
+                                value="${entry.debit_amount}"/>
+                        </td>
+                        <td style="height: 40px;width: 15%">
+                            <input
+                                readonly="readonly" maxlength="10"
+                                style="width:100%;height:45px;border: 0px;"
+                                type="text" name="creditAmount"
+                                value="${entry.credit_amount}"/>
+                        </td>
+                        <input type="hidden" name="contactsDnit" value=""/>
+                        <!--往来单位核算-->
+                        <input type="hidden" name="department" value=""/>
+                        <!--部门核算-->
+                        <input type="hidden" name="staff" value=""/><!--职员核算-->
+                    </tr>
+                    @}
+                    </tbody>
+                </table>
+                <!--该DIV总金额数 制单人 等-->
+                <div style="width: 100%;height: 8%;margin-top: 10px;">
+                    <table style="width: 100%;height: 8%;font-weight: bold;border-top: none;"
+                           cellspacing="0">
+                        <tr style="background-color: white">
+                            <td style="width: 6%;text-align: center">合计：</td>
+                            <td style="height: 50px;width: 45%;"><input
+                                    readonly="readonly"
+                                    style="width:100%;height:40px;border: 0px;background-color:#f1f2f7;text-indent: 10px;"
+                                    type="text" id="lumpSum" name="lumpSum"
+                                    value="${entrySchedule[0].lump_sum}"/></td>
+                            <td style="height: 50px;width: 18%;"><input
+                                    readonly="readonly"
+                                    style="width:100%;height:40px;border: 0px;background-color:#f1f2f7;border-right: 4px white solid;border-left: 4px white solid;text-indent: 10px;"
+                                    type="text" name="debitAmountAll"
+                                    id="debitAmountAll" value=""/></td>
+                            <td style="height: 50px;width: 18%;"><input
+                                    readonly="readonly"
+                                    style="width:100%;height:40px;border: 0px;background-color:#f1f2f7;text-indent: 10px;"
+                                    type="text" name="creditAmountAll"
+                                    id="creditAmountAll" value=""/></td>
+                        </tr>
+                        <tr style="margin-top: 10px;">
+                            <td style="width: 6%;text-align: center">
+                                备注：
+                            </td>
+                            <td colspan="3" style="height: 40px;">
+                                <textarea
+                                        style="width:100%;height: 100%;border: none;resize:none; padding: 0;background-color: #f1f2f7"
+                                        id="remarks" name="remarks">${entrySchedule[0].remarks}</textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width: 100%;height: 10%;font-weight: bold;margin-top: 20px;"
+                           cellspacing="0">
+                        <tr>
+                            <td><span
+                                    style="color: black;size: 25px;margin-left: 5%;">审核:</span><input
+                                    readonly="readonly"
+                                    style="width:100%;height:100%;border: 0px;"
+                                    type="text" id="approvalPeople"
+                                    name="approvalPeople"
+                                    value="${entrySchedule[0].approval_people}"/>
+                            </td>
+                            <td><span
+                                    style="color: black;size: 25px;margin-left: 10%;">过账:</span><input
+                                    readonly="readonly"
+                                    style="width:100%;height:100%;border: 0px;"
+                                    type="text" id="postingStatus"
+                                    name="postingStatus"
+                                    value="${entrySchedule[0].posting_people}"/>
+                            </td>
+                            <td><span
+                                    style="color: black;size: 25px;margin-left: 10%;">制单:</span><input
+                                    readonly="readonly"
+                                    style="width:100%;height:100%;border: 0px;color: black"
+                                    type="text" id="preparedBy"
+                                    name="preparedBy"
+                                    value="${entrySchedule[0].prepared_by}"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/finance/entry/entryAdd_edit_info.js"></script>
+<!--<script src="${ctxPath}/static/modular/finance/ExpenseAccount/subject.js"></script>
+<script src="${ctxPath}/static/modular/finance/common/ztree_object.js"></script>
+<script src="${ctxPath}/static/modular/finance/entry/other_accounting.js"></script>-->
+<script>
+    laydate.render({
+        elem: '#businessDate',
+        type: 'date'
+    });
+</script>
+@}

@@ -1,0 +1,37 @@
+@layout("/common/_container.html"){
+<div class="row">
+    <div class="col-sm-12" style="position: absolute;z-index: 100">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>凭证统计页面</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12" style="width: 100%">
+                        <div class="row">
+                            <!--                            <div class="col-sm-3">
+                                                            <#NameCon id="condition" name="名称" />
+                                                        </div>-->
+                            <!--<div class="col-sm-3">
+                                <#button name="搜索" icon="fa-search" clickFun="Entry.search()"/>
+                            </div>-->
+                        </div>
+                        <div class="hidden-xs" id="EntryTableToolbar" role="group">
+                            <#button name="搜索" icon="fa-search"  clickFun="Entry.openShowSearch()" space="true"/>
+                        </div>
+                        <#table id="EntryTable"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/finance/entry/entryStatistical.js"></script>
+<script src="${ctxPath}/static/modular/finance/common/entry-bootstrap-table.js"></script>
+<script>
+    laydate.render({
+        elem: '#business_date',
+        type: 'date'
+    });
+</script>
+@}

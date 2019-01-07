@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.finance.dao.TagMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.finance.model.Tag">
+        <id column="id" property="id" />
+        <result column="foreign_key_id" property="foreign_key_id" />
+        <result column="approval_status" property="approval_status" />
+        <result column="approval_people" property="approval_people" />
+        <result column="posting_status" property="posting_status" />
+        <result column="posting_people" property="posting_people" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        foreign_key_id,
+        approval_status,
+        approval_people,
+        posting_status,
+        posting_people
+    </sql>
+    <!--审批/*,approval_status,approval_people*/-->
+    <insert id="approval">
+        insert into cer_tag
+        (foreign_key_id,
+        approval_people,
+        approval_status,
+        posting_status,
+        posting_people
+        )
+        values
+        <foreach collection="listMap" item="item" separator=",">
+            (#{item.entryId},#{item.name},'1',null,null)
+        </foreach>
+    </insert>
+
+    <!--反审-->
+    <delete id="reverseApproval">
+        delete from  cer_tag
+        where
+        <foreach collection="listMap" item="item" separator="or">
+            foreign_key_id = #{item.entryId}
+        </foreach>
+    </delete>
+
+    <!--过账-->
+    <update id="updatePosting">
+            UPDATE cer_tag
+              SET
+                posting_status = '1' ,
+                posting_people = #{name}
+            WHERE
+            foreign_key_id = #{entryId}
+    </update>
+</mapper>

@@ -1,0 +1,54 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+            <input type="hidden" value="${shiro.getUser().name}" id="preparedBy" name="preparedBy">
+            <div class="row">
+                <div>
+                    <table style="width: 100%">
+                        <tr>
+                            <td colspan="2" style="height: 30px">凭证摘要：<input id="remarks" name="remarks" style="width: 80%;height: 99%" type="text" value="结转本期损益"></td>
+                            <td style="height: 30px">凭证字：<select id="documentWord" name="documentWord" style="width: 10%;height: 99%">
+                                <option value="1">记</option>
+                                <option value="2">收</option>
+                                <option value="3">付</option>
+                                <option value="4">转</option>
+                            </select></td>
+                        </tr>
+                        @for(ex in exList){
+                            @if(ex.accountCode != '6901'){
+                                <tr>
+                                    <td style="width: 33%">${ex.accountCode}</td>
+                                    <td style="width: 33%">${ex.subiectName}</td>
+                                    <td style="width: 34%">4103(本年利润)</td>
+                                </tr>
+                            @}else{
+                                <tr>
+                                    <td style="width: 33%">${ex.accountCode}</td>
+                                    <td style="width: 33%">${ex.subiectName}</td>
+                                    <td style="width: 33%">
+                                        <select>
+                                            @for(exFP in exListFP){
+                                            <option value="${exFP.accountCode}">${exFP.accountCode}(${exFP.subiectName})</option>
+                                            @}
+                                        </select>
+                                    </td>
+                                </tr>
+                            @}
+                        @}
+                    </table>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10" style="text-align: center;">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="EntryInfoDlg.varryOver()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="EntryInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/finance/entry/entry_info.js"></script>
+@}

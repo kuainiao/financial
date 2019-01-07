@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.finance.dao.AuditpermissionsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.finance.model.Auditpermissions">
+        <id column="id" property="id" />
+        <result column="prepared_by" property="preparedBy" />
+        <result column="approval_people" property="approvalPeople" />
+        <result column="posting_people" property="postingPeople"></result>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, prepared_by, approval_people,posting_people
+    </sql>
+
+    <!--查询本人审核权限配置数据-->
+    <select id="findAuditPermissions" resultType="cn.stylefeng.guns.modular.finance.model.Auditpermissions">
+        SELECT
+            id,
+            prepared_by as preparedBy,
+            approval_people as approvalPeople,
+            posting_people as postingPeople
+        FROM
+            cer_auditpermissions
+        WHERE
+            prepared_by = #{name}
+            <if test="map.posting_people != null and map.posting_people != '' ">
+                AND posting_people IS NOT NULL
+            </if>
+            <if test="map.approval_people !=null and map.approval_people != '' ">
+                AND approval_people IS NOT NULL
+            </if>
+    </select>
+    <!--查询员工名-->
+    <select id="prepared_by_list" resultType="String">
+        SELECT
+          NAME
+        FROM
+          sys_user
+        WHERE
+           status = '1'
+    </select>
+
+    <!--查询-->
+    <select id="findAuditName"  resultType="map">
+        SELECT
+            prepared_by AS NAME
+        FROM
+            cer_auditpermissions
+        <where>
+            <if test="map.dateClass == 1">
+                approval_people = #{name}
+            </if>
+            <if test="map.dateClass == 0">
+                posting_people = #{name}
+            </if>
+        </where>
+    </select>
+   <!--更新过账权限配置信息-->
+    <update id="updatePosting">
+        update
+            cer_auditpermissions
+          set
+            posting_people = #{postingPeople}
+        where
+            prepared_by = #{preparedBy}
+    </update>
+    <!--更新审核配置信息-->
+    <update id="updateApproval">
+        update
+          cer_auditpermissions
+        set
+          approval_people = #{approvalPeople}
+        where
+          prepared_by = #{preparedBy}
+    </update>
+    <!--获取当前人权限-->
+    <select id="findAudit" resultType="map">
+        select
+          approval_people,
+          posting_people
+        FROM cer_auditpermissions
+          where
+            prepared_by= #{name}
+    </select>
+    <!--查询审核权限-->
+    <select id="findApproval" resultType="String">
+        select
+          approval_people
+        from cer_auditpermissions
+        <where>
+            id = #{auditpermissionsId}
+        </where>
+    </select>
+
+    <!--查询过账权限-->
+    <select id="findPosting" resultType="String">
+        select
+          posting_people
+        from cer_auditpermissions
+        <where>
+            id = #{auditpermissionsId}
+        </where>
+    </select>
+
+    <!--删除过账-->
+    <update id="deletePosting">
+        update
+          cer_auditpermissions
+        set
+          posting_people=#{map.postingPeople}
+       <where>
+          id=#{map.id}
+       </where>
+    </update>
+
+    <!--删除审核-->
+    <update id="deleApproval">
+        update
+          cer_auditpermissions
+        set
+          approval_people = #{map.approvalPeople}
+        <where>
+          id=#{map.id}
+        </where>
+    </update>
+</mapper>

@@ -1,0 +1,270 @@
+@layout("/common/_container.html"){
+<div style="margin-top: 20px;">
+    <div style="height: 40px;overflow:hidden;width: 100%;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            搜索方案:
+        </div>
+        <div style="width: 55%;float: left;">
+            <select id="search_plan" onchange="search.Assignment(this)" style="width: 99%;height: 35px;border: 1px solid #e5e6e7;
+            color: inherit;font-size: 14px;border-radius: 20px;text-indent: .8em;padding-right: .8em;">
+                <option selected="selected" value="">请选择</option>
+                @for(search in list){
+                <option value="${search.id}">${search.search_remark}</option>
+                @}
+            </select>
+        </div>
+        <div style="float: left;">
+            <button type="button" onclick="search.opensaveSearch()" class="btn btn-primary btn-sm button-margin"
+                    style=" width:55px; border-radius: 15px; height: 31px; margin-left: 20px!important"> 保存</button>
+            <button type="button" onclick="search.deleteSearch()" class="btn btn-primary btn-sm button-margin"
+                    style="width:55px; border-radius: 15px; height: 31px; margin-left: 10px!important"> 删除</button>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 10px;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            会计期间:
+        </div>
+        <div style="width: 80%;float: left;">
+            <select style="width: 200px;height: 34px;border: 1px solid #e5e6e7;color: inherit;font-size: 14px;
+            border-radius: 20px;text-indent: .8em" id="start_period" name="start_period">
+                <option value="" selected="selected">全部</option>
+                <option value="1">2018年第1期</option>
+            </select>
+            &nbsp;&nbsp;至
+            <select style="margin-left: 5px;width: 200px;height: 34px;border: 1px solid #e5e6e7;color: inherit;
+            font-size: 14px;border-radius: 20px;text-indent: .8em" id="end_period" name="end_period">
+                <option value="" selected="selected">全部</option>
+                <option value="1">2018年第11期</option>
+            </select>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 10px;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            过账状态:
+        </div>
+        <div style="float: left;width: 38%;">
+            <form style="overflow: hidden;">
+                <div style="float: left;">
+                    <input  type="radio" name="posting_status" id="posting_status_all" checked="checked" value="">
+                    <label for="posting_status_all"></label>
+                    <span>全部</span>
+                </div>
+                <div style="float: left;">
+                    <input type="radio" name="posting_status" id="posting_status_not" value="0" >
+                    <label for="posting_status_not"></label>
+                    <span>未过账</span>
+                </div>
+                <div style="float: left;">
+                    <input type="radio" name="posting_status" id="posting_status_yes" value="1" >
+                    <label for="posting_status_yes"></label>
+                    <span>已过账</span>
+                </div>
+            </form>
+        </div>
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            审核状态:
+        </div>
+        <div style="float: left;width: 38%;">
+            <form style="overflow: hidden;">
+                <div style="float: left;">
+                    <input type="radio" name="approval_status" id="approval_status_all" checked="checked" value="">
+                    <label for="approval_status_all"></label>
+                    <span>全部</span>
+                </div>
+                <div style="float: left;">
+                    <input type="radio" name="approval_status" id="approval_status_not"  value="0">
+                    <label for="approval_status_not"></label>
+                    <span>未审核</span>
+                </div>
+                <div style="float: left;">
+                    <input type="radio" name="approval_status" id="approval_status_yes" value="1" >
+                    <label for="approval_status_yes"></label>
+                    <span>已审核</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 10px;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            业务日期:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <input type="text" class="form-control layer-date" id="business_date_start" name="business_date_start" style="width: 90%;float: left;height: 35px;line-height: 35px;background-color: white"/>
+        </div>
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;padding-left: 2%">
+            至
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <input type="text" class="form-control layer-date" id="business_date_end" name="business_date_end" style="width: 90%; float:left;height: 35px;line-height: 35px;background-color: white"/>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 10px;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            凭证字:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <select style=" width:90%;height: 34px;border: 1px solid #e5e6e7;color: inherit;font-size: 14px;border-radius: 20px;
+            text-indent: 6px;" id="document_word" name="document_word">
+                <option value="" selected="selected">全部</option>
+                <option value="1">记账凭证</option>
+                <option value="2">收账凭证</option>
+                <option value="3">付账凭证</option>
+                <option value="4">转账凭证</option>
+            </select>
+        </div>
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            制单人:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <select style=" width: 90%;height: 34px;border: 1px solid #e5e6e7;color: inherit;font-size: 14px;border-radius: 20px;
+            text-indent: 6px;" id="prepared_by" name="prepared_by">
+                <option value="" selected="selected">请选择制单人</option>
+            </select>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 10px;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            审核人：
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <select style=" width:90%;height: 34px;border: 1px solid #e5e6e7;color: inherit;font-size: 14px;border-radius: 20px;
+            text-indent: 6px;" id="approval_people" name="approval_people">
+                <option value="" selected="selected">请选择审核人</option>
+            </select>
+        </div>
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            过账人:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <select style=" width: 90%;height: 34px;border: 1px solid #e5e6e7;color: inherit;font-size: 14px;border-radius: 20px;
+            text-indent: 6px;" id="posting_people" name="posting_people">
+                <option value="" selected="selected">请选择过账人</option>
+            </select>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 10px;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            摘要:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <input type="text" name="summary" id="summary" style="text-indent: .8em; width: 90%;height:35px;line-height: 35px;
+            border-radius: 20px;border: 1px #e5e6e7 solid"/>
+        </div>
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            科目编号:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <input type="text" id="expense_account" name="expense_account" onclick="search.openAddSubject(this);" style="text-indent: .8em;
+            width: 90%;height:35px;line-height: 35px;border-radius: 20px;border: 1px #e5e6e7 solid"/>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 10px;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            凭证号:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <input type="text" style="border-radius: 20px; text-align: center; width: 39%;height: 34px;border: 1px solid #e5e6e7;
+            color: inherit;font-size: 14px;"  id="start_document_number" name="start_document_number"/>
+            &nbsp;&nbsp;至
+            <input type="text" style="border-radius: 20px; text-align: center;margin-left: 5px;width:39%;height: 34px;border: 1px solid #e5e6e7;color: inherit;font-size: 14px;" id="end_document_number" name="end_document_number"/>
+        </div>
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            贷方金额:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <input type="text" style="border-radius: 20px; text-align: center; width: 39%;height: 34px;border: 1px solid #e5e6e7;
+            color: inherit;font-size: 14px;" id="start_credit_amount" name="start_credit_amount"/>
+            &nbsp;&nbsp;至
+            <input type="text" style="border-radius: 20px; text-align: center; width: 39%;height: 34px;border: 1px solid #e5e6e7;
+            color: inherit;font-size: 14px;" id="end_credit_amount" name="end_credit_amount"/>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 10px;">
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            借方金额:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <input type="text" style="border-radius: 20px; text-align: center; width: 39%;height: 34px;border: 1px solid #e5e6e7;
+            color: inherit;font-size: 14px;"  id="start_document_number" name="start_document_number"/>
+            &nbsp;&nbsp;至
+            <input type="text" style="border-radius: 20px; text-align: center;margin-left: 5px;width:39%;height: 34px;border: 1px solid #e5e6e7;
+            color: inherit;font-size: 14px;" id="end_document_number" name="end_document_number"/>
+        </div>
+        <div style="float:left;line-height: 35px;font-weight: bold;font-size: 14px;width: 11%;">
+            原币金额:
+        </div>
+        <div style="width: 38%;float: left;line-height: 35px;">
+            <input type="text" style="border-radius: 20px; text-align: center; width: 39%;height: 34px;border: 1px solid #e5e6e7;color: inherit;
+            font-size: 14px;" id="start_credit_amount" name="start_credit_amount"/>
+            &nbsp;&nbsp;至
+            <input type="text" style="border-radius: 20px; text-align: center; width: 39%;height: 34px;border: 1px solid #e5e6e7;color: inherit;
+            font-size: 14px;" id="end_credit_amount" name="end_credit_amount"/>
+        </div>
+    </div>
+    <div style="height: 40px;overflow:hidden;width: 100%;margin-top: 5%;">
+        <div style="width: 70%;float: right;margin-right: 1.5%">
+            <button type="button" name="submit" id="submit" value="" onclick="search.openEntryclickSubmit()" class="btn btn-primary button-margin"
+                    style="border-radius: 20px; width: 120px;height: 35px; margin-left: 40px!important">提交</button>
+            <button type="button" name="resete" id="resete" value="" onclick="search.searchResete()" class="btn btn-primary button-margin"
+                    style="border-radius: 20px; width: 120px;height: 35;margin-left:30px !important;">重置</button>
+            <button type="button" name="remove" id="remove" value="" onclick="search.closeSearch()" class="btn btn-primary button-margin"
+                    style="border-radius: 20px;width: 120px;height: 35px;margin-left:30px !important;">关闭</button>
+        </div>
+
+    </div>
+
+
+
+</div>
+<style>
+    span{
+        margin-left: 15px;line-height: 35px;}
+    div {
+        position: relative;
+        line-height: 30px;
+    }
+    input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+    }
+    label {
+        position: absolute;
+        left: 15px;
+        top: 8px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #999;
+    }
+    /*设置选中的input的样式*/
+    /* + 是兄弟选择器,获取选中后的label元素*/
+    input:checked+label {
+        background-color: #0557b2;
+        border: 1px solid #0557b2;
+    }
+    input:checked+label::after {
+        position: absolute;
+        content: "";
+        width: 5px;
+        height: 10px;
+        top: 3px;
+        left: 6px;
+        border: 2px solid #fff;
+        border-top: none;
+        border-left: none;
+        transform: rotate(45deg)
+    }
+</style>
+<script src="${ctxPath}/static/modular/finance/entry/entry_search.js"></script>
+<script>
+    laydate.render({
+        elem: '#business_date_start',
+        type: 'date'
+    });
+    laydate.render({
+        elem: '#business_date_end',
+        type: 'date'
+    });
+</script>
+@}

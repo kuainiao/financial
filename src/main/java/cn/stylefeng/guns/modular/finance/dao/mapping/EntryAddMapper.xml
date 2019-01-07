@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.finance.dao.EntryGlmMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.finance.model.Entry">
+        <id column="id" property="id" />
+        <result column="business_date" property="businessDate" />
+        <result column="sequence_number" property="sequenceNumber" />
+        <result column="document_word" property="documentWord" />
+        <result column="document_number" property="documentNumber" />
+        <result column="documents_number" property="documentsNumber" />
+        <result column="prepared_by" property="preparedBy" />
+        <result column="create_time" property="createTime" />
+        <result column="settlement_state" property="settlementState" />
+        <result column="lump_sum" property="lumpSum" />
+        <result column="period" property="period"></result>
+    </resultMap>
+
+    <!-- 新增凭证表 -->
+    <insert id="insertGlm">
+      insert into  cer_entry
+          (sequence_number,document_word,document_number,documents_number,prepared_by,create_time,business_date,lump_sum,period,remarks)values
+          (#{sequenceNumber},#{documentWord},#{documentNumber},#{documentsNumber},#{preparedBy},#{createTime},#{businessDate},#{lumpSum},#{period},#{remarks})
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID() as id
+        </selectKey>
+    </insert>
+
+    <!-- 新增凭证附表 -->
+    <insert id="insertGlmSchedule" parameterType="list">
+      insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+        <foreach collection="entrySchedule" index="index" item="item" separator=",">
+            (#{item.summary},#{item.expenseAccount},#{item.debitAmount},#{item.creditAmount},#{item.foreignKey},#{item.originalCurrency},#{item.rownum},#{item.contactsDnit},#{item.department},#{item.staff})
+        </foreach>
+    </insert>
+
+    <!--修改主表凭证-->
+    <update id="updateEntry">
+        UPDATE cer_entry
+        SET
+            sequence_number=#{sequenceNumber},
+            document_word=#{documentWord},
+            document_number=#{documentNumber},
+            documents_number=#{documentsNumber},
+            business_date=#{businessDate},
+            lump_sum=#{lumpSum},
+            period=#{period},
+            remarks=#{remarks}
+        WHERE
+            id = #{id}
+    </update>
+
+    <!--修改副标凭证-->
+    <update id="updateEntrySchedule">
+        UPDATE
+            cer_entry_schedule
+        SET
+            summary=#{summary},
+            expense_account=#{expenseAccount},
+            debit_amount=#{debitAmount},
+            credit_amount=#{creditAmount},
+            contacts_dnit=#{contactsDnit},
+            department=#{department},
+            staff=#{staff},
+            foreign_key=#{foreignKey},
+            original_currency=#{originalCurrency},
+            rownum=#{rownum}
+        WHERE
+        id = ${id}
+    </update>
+    <!--修改凭证时附表删除-->
+    <delete id="entryScheduleDelete" parameterType="list">
+        DELETE FROM cer_entry_schedule WHERE id in
+        <foreach collection="ids" item="arr" index="no" open="(" separator="," close=")">
+            #{arr}
+        </foreach>
+    </delete>
+
+    <!-- 根据id主表关联两张子表 -->
+    <select id="selectEntryIdScheduleList" resultType="map">
+        select
+            a.id,
+            a.business_date,
+            a.sequence_number,
+            a.document_word,
+            a.documents_number,
+            a.document_number,
+            a.prepared_by,
+            a.create_time,
+            a.settlement_state,
+            a.lump_sum,
+            a.period,
+            a.settlement_mouth_state,
+            a.remarks,
+            b.id AS Sid,
+            b.summary,
+            b.expense_account,
+            b.debit_amount,
+            b.credit_amount,
+            b.foreign_key,
+            b.rownum,
+            b.original_currency,
+            b.contacts_dnit,
+            b.department,
+            b.staff,
+            c.id AS Tid,
+            c.foreign_key_id,
+            c.approval_status,
+            c.approval_people,
+            c.posting_status,
+            c.posting_people,
+            d.account_code,
+            d.subiect_name,
+            d.superior_code
+        from
+            cer_entry a
+        LEFT JOIN cer_entry_schedule b ON a.id = b.foreign_key
+        LEFT JOIN cer_tag c ON a.id = c.foreign_key_id
+        LEFT JOIN cer_expense_account d ON b.expense_account=d.account_code
+        <where>
+            a.id = #{Id}
+        </where>
+        ORDER BY b.rownum asc
+    </select>
+
+   <!-- <select id="selectBySettlement" resultMap="BaseResultMap" parameterType="String">
+        select
+            id,
+            business_date,
+            sequence_number,
+            document_word,
+            document_number,
+            documents_number,
+            prepared_by,
+            create_time,
+            settlement_state,
+            lump_sum,
+            period,
+            settlement_mouth_state,
+            remarks,
+            state
+        from
+            cer_entry
+        where
+            settlement_state = 1
+            and state = 1
+          <if test="document != null and document != ''">
+              and document_word = #{document}
+          </if>
+    </select>-->
+    <!--获取未过帐或已过帐数据-->
+    <select id="selectNotPosting" resultMap="BaseResultMap" parameterType="map">
+        select
+            id,
+            business_date,
+            sequence_number,
+            document_word,
+            document_number,
+            documents_number,
+            prepared_by,
+            create_time,
+            settlement_state,
+            lump_sum,
+            period,
+            settlement_mouth_state,
+            remarks,
+            state
+        from
+            cer_entry
+        where
+            state = 1
+        <if test="settlement_mouth_state != null and settlement_mouth_state != ''">
+            and settlement_mouth_state = #{settlement_mouth_state}
+        </if>
+        <if test="settlement_state != null and settlement_state != ''">
+           and settlement_state = #{settlement_state}
+        </if>
+        <if test="document != null and document != ''">
+            and document_word = #{document}
+        </if>
+        order by business_date desc
+    </select>
+    <!--获取所有费用科目-->
+    <select id="selectAccountAll" resultType="map">
+        SELECT
+               account_code,
+               subiect_name,
+               superior_code
+        FROM
+             cer_expense_account
+    </select>
+    
+    <update id="updatEntry" parameterType="list">
+        update cer_entry set settlement_state = 0 where id in
+        <foreach collection="id" item="arr" index="no" open="(" separator="," close=")">
+            #{arr}
+        </foreach>
+    </update>
+
+</mapper>

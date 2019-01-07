@@ -1,0 +1,62 @@
+@layout("/common/_container.html"){
+<div style="margin-top: 3px;">
+    <table  style="height: 280px;width: 100%;border: none;font-size: 14px;" id="closingNote">
+        <tr style="width: 98%;height:80%;border-top-color: aqua">
+            <td style="width: 25%"></td>
+            <td >
+                <textarea  style="height: 42%;width:98%; float: left;border: none;resize:none;">
+                    为了总结某一会会计期间（年度或月度）的经营活动情况,必须定期进行结账，结账就是把一定时期内发生的经济业
+                    务在全部登记入账的基础上，将各种账簿记录结出“本期发生额”和“期末余额”，从而根据账簿记录编制会计报表。
+                </textarea>
+                <textarea  style="margin-top: 5px; height:  40%; width:98%; float: left;border: none;resize:none;">
+                    在结帐之前,应先检查本期发生的各种经济业务是否都已经编制记账凭证并登记入账。对各种成本费用类账户，也应
+                    当在结账前对余额进行结转，并登记入账.
+                </textarea>
+            </td>
+        </tr>
+        <tr style="width: 98%;height: 10%">
+            <td colspan="2" align="center">
+                <#button name="前进" icon=""  clickFun="Checkout.closingNoteForward()" space="true"/>
+                <#button name="取消" icon=""  clickFun="Checkout.cancel()" space="true"/>
+            </td>
+        </tr>
+    </table>
+    <table  style="height: 280px;width: 100%;border: none;font-size: 14px;display:none" id="checkoutFunction">
+        <tr style="width: 98%;height: 20%;border-top-color: aqua">
+            <td style="width: 25%" rowspan="2"></td>
+            <td colspan="2">
+                确认当前选择的结账方式:
+            </td>
+        </tr>
+        <tr style="width: 98%;height: 20%;border-top-color: aqua">
+            <td>
+                <input type="radio" name="checkout" value="0" checked="checked"  style="width: 17px;height: 17px" />期末结账 </br>
+                <input type="radio" name="checkout" value="1" style="width: 17px;height: 17px"/>期末反结帐 </br>
+                <input type="radio" name="checkout" value="2" style="width: 17px;height: 17px"/>反过账当前凭证</br>
+                <input type="radio" name="checkout" onclick="Checkout.markedWords()" value="3" style="width: 17px;height: 17px"/>年结账</br>
+            </td>
+            <td>
+                <span style="color: red">需要操作的会计期间</span></br>
+                <select id="period" style="width: 40%;height: 34px;border: 1px solid #e5e6e7;color: inherit;font-size: 14px;border-radius: 20px;text-indent: 6px;">
+                </select>
+            </td>
+        </tr>
+        <tr style="width: 98%;height: 18%">
+            <td colspan="3" align="center">
+                <#button name="完成" icon=""  clickFun="Checkout.submitCheckout()" space="true"/>
+                <#button name="取消" icon=""  clickFun="Checkout.cancel() " space="true"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="${ctxPath}/static/modular/finance/entry/checkout.js"></script>
+<script>
+    $(function () {
+        var str = ""
+        for(i=1 ;i<=12;i++){
+            str+="<option>"+i+"</option>";
+        }
+        $("#period").append(str);
+    })
+</script>
+@}

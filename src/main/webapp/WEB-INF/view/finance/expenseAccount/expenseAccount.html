@@ -1,0 +1,53 @@
+@layout("/common/_container.html"){
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>费用科目管理</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-3">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">费用科目列表</div>
+                                    <div class="panel-body dept-tree">
+                                        <ul id="deptTree" class="ztree"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-sm-9">
+                                <div class="row">
+                                    <div class="col-lg-10 col-sm-9">
+
+                                    </div>
+                                    <div class="col-lg-2 col-sm-3">
+
+                                    </div>
+                                </div>
+                                <div class="hidden-xs" id="ExpenseAccountTableToolbar" role="group">
+                                    @if(shiro.hasPermission("/expenseAccount/add")){
+                                    <#button name="添加" icon="fa-plus" clickFun="ExpenseAccount.openAddExpenseAccount()"/>
+                                    @}
+                                    @if(shiro.hasPermission("/expenseAccount/update")){
+                                    <#button name="修改" icon="fa-edit" clickFun="ExpenseAccount.openExpenseAccountDetail()" space="true"/>
+                                    @}
+                                    @if(shiro.hasPermission("/expenseAccount/delete")){
+                                    <#button name="删除" icon="fa-remove" clickFun="ExpenseAccount.delete()" space="true"/>
+                                    @}
+                                    @if(shiro.hasPermission("/expenseAccount/add")){
+                                    <#button name="返回" icon="fa-repeat" clickFun="ExpenseAccount.previous()" space="true"/>
+                                    @}
+                                </div>
+                                <#table id="ExpenseAccountTable"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/finance/expenseAccount/expenseAccount.js"></script>
+@}

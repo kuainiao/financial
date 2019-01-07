@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.modular.finance.dao.EntryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.modular.finance.model.Entry">
+        <id column="id" property="id" />
+        <result column="business_date" property="businessDate" />
+        <result column="sequence_number" property="sequenceNumber" />
+        <result column="document_word" property="documentWord" />
+        <result column="document_number" property="documentNumber" />
+        <result column="documents_number" property="documentsNumber" />
+        <result column="prepared_by" property="preparedBy" />
+        <result column="create_time" property="createTime" />
+        <result column="settlement_state" property="settlementState" />
+        <result column="lump_sum" property="lumpSum" />
+        <result column="period" property="period"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        business_date,
+        sequence_number,
+        document_word,
+        document_number,
+        documents_number,
+        prepared_by,
+        create_time,
+        settlement_state,
+        lump_sum
+    </sql>
+
+
+    <!--cer_entry表的筛选条件为a.id-->
+    <sql id="Base_Seach_fild_Cer_entry">
+        <!--若查询条件为空，则只查询一遍-->
+        <if test="
+                map.start_period != null and map.start_period != '' and map.end_period != null and map.end_period !=''
+            or
+                map.posting_status != null and map.posting_status != ''
+            or
+                map.approval_status != null and map.approval_status !=''
+            or
+                map.business_date_start != null and map.business_date_start != '' and map.business_date_end != null and map.business_date_end != ''
+            or
+                map.document_word != null and map.document_word != ''
+            or
+                map.prepared_by != null and map.prepared_by !=''
+            or
+                map.approval_people !=null and map.approval_people != ''
+            or
+                map.posting_people !=null and map.posting_people != ''
+            or
+                map.summary != null and map.summary !=''
+            or
+                map.expense_account != null and map.expense_account !=''
+            or
+                map.start_document_number != null and map.start_document_number !='' and map.end_document_number !=null and map.end_document_number != ''
+            or
+                map.start_credit_amount != null and map.start_credit_amount !='' and map.end_credit_amount != null and map.end_credit_amount != ''
+            or
+                map.start_debit_amount != null and map.start_debit_amount != '' and map.end_debit_amount != null and map.end_debit_amount !=''
+            or
+                map.start_original_currency != null and map.start_original_currency != '' and map.end_original_currency != null and map.end_original_currency !=''
+            ">
+            b.foreign_key = ANY(
+            SELECT
+            e.id
+            FROM
+            cer_entry e
+            LEFT JOIN cer_entry_schedule f ON e.id = f.foreign_key
+            LEFT JOIN cer_tag g ON e.id = g.foreign_key_id
+            <where>
+                <!--g.posting_people is NULL-->
+                <if test="map.start_period != null and map.start_period != '' and map.end_period != null and map.end_period !='' "><!--会计期间-->
+                    and e.period &gt;= #{map.start_period}
+                    and e.period &lt;= #{map.end_period}
+                </if>
+                <if test="map.posting_status != null and map.posting_status != '' and map.posting_status != 0"> <!--过账状态-->
+                    and g.posting_status=#{map.posting_status}
+                </if>
+                <if test="map.posting_status == 0 and map.posting_status != null and map.posting_status != ''"> <!--过账状态-->
+                    and g.posting_status is NULL
+                </if>
+                <if test="map.approval_status != null and map.approval_status !='' and map.approval_status != 0 "><!--审批状态-->
+                    and g.approval_status=#{map.approval_status}
+                </if>
+                <if test="map.approval_status != null and map.approval_status !='' and map.approval_status == 0 "><!--审批状态-->
+                    and g.approval_status IS NULL
+                </if>
+                <if test="map.business_date_start != null and map.business_date_start !='' and map.business_date_end != null and map.business_date_end != ''"><!--业务期间-->
+                    and e.business_date &gt;=#{map.business_date_start}
+                    and e.business_date &lt;=#{map.business_date_end}
+                </if>
+                <if test="map.document_word != null and map.document_word !='' "><!--凭证字-->
+                    and e.document_word=#{map.document_word}
+                </if>
+                <if test="map.prepared_by != null and map.prepared_by !='' "><!--制单人-->
+                    and e.prepared_by = #{map.prepared_by}
+                </if>
+                <if test="map.approval_people !=null and map.approval_people != '' "><!--审核人-->
+                    and g.approval_people = #{map.approval_people}
+                </if>
+                <if test="map.posting_people !=null and map.posting_people != ''"><!--过账人-->
+                    and g.posting_people= #{map.posting_people}
+                </if>
+                <if test="map.summary != null and map.summary !='' "><!--摘要-->
+                    and f.summary = #{map.summary}
+                </if>
+                <if test="map.expense_account != null and map.expense_account !='' "><!--会计科目-->
+                    and f.expense_account LIKE CONCAT(#{map.expense_account},'%')
+                </if>
+                <if test="map.start_document_number != null and map.start_document_number !='' and map.end_document_number !=null and map.end_document_number != '' "><!--凭证字号区间-->
+                    and e.document_number &gt;=  #{map.start_document_number}
+                    and e.document_number &lt;= #{map.end_document_number}
+                </if>
+                <if test="map.start_credit_amount != null and map.start_credit_amount !='' and map.end_credit_amount != null and map.end_credit_amount != '' "><!--贷方金额:-->
+                    and f.credit_amount &gt;= #{map.start_credit_amount}
+                    and f.credit_amount &lt;= #{map.end_credit_amount}
+                </if>
+                <if test="map.start_debit_amount != null and map.start_debit_amount != '' and map.end_debit_amount != null and map.end_debit_amount !='' "><!--借方金额-->
+                    and f.debit_amount &gt;=  #{map.start_debit_amount}
+                    and f.debit_amount &lt;= #{map.end_debit_amount}
+                </if>
+                <if test="map.start_original_currency != null and map.start_original_currency != '' and map.end_original_currency != null and map.end_original_currency !='' "><!--原币金额:-->
+                    and f.original_currency &gt; = #{map.start_original_currency}
+                    and f.original_currency &lt; = #{map.end_original_currency}
+                </if>
+                GROUP BY e.id
+            </where>
+            )
+        </if>
+    </sql>
+
+    <!--查询父节点-->
+    <select id="selectTreeParentList" resultType="map">
+        SELECT DISTINCT
+            a.id,
+            a.id AS code,
+            0 AS pcode,
+            DATE_FORMAT(a.business_date,'%Y-%m-%d') as business_date,
+            a.sequence_number,
+            a.document_word,
+            a.documents_number,
+            a.document_number,
+            a.prepared_by,
+            a.create_time,
+            a.settlement_state,
+            a.lump_sum,
+            a.period,
+            a.settlement_mouth_state,
+            a.remarks,
+            b.id AS Sid,
+            b.summary,
+            b.expense_account,
+            null as debit_amount,
+            null as credit_amount,
+            b.foreign_key,
+            b.rownum,
+            b.original_currency,
+            c.id AS Tid,
+            c.foreign_key_id,
+            c.approval_status,
+            c.approval_people,
+            c.posting_status,
+            c.posting_people
+        FROM
+             cer_entry a
+         LEFT JOIN cer_entry_schedule b ON a.id = b.foreign_key
+         LEFT JOIN cer_tag c ON a.id = c.foreign_key_id
+        <where>
+            <include refid="Base_Seach_fild_Cer_entry"></include>
+            and a.prepared_by in(
+            <foreach collection="name" item="item">
+                #{item.NAME},
+            </foreach>
+            <if test="map.name != null and map.name != ''">
+                #{map.name}
+            </if>
+            )
+            and
+              a.settlement_years_state = '1'
+        </where>
+         group by a.id order by a.create_time desc
+    </select>
+    <!--查询子节点-->
+    <select id="selectTreeChildrenList" resultType="map">
+        SELECT
+            a.id,
+            null AS code,
+            b.foreign_key AS pcode,
+            DATE_FORMAT(a.business_date,'%Y-%m-%d') as business_date,
+            a.sequence_number,
+            a.document_word,
+            a.documents_number,
+            a.document_number,
+            a.prepared_by,
+            a.create_time,
+            a.settlement_state,
+            a.lump_sum,
+            a.period,
+            a.settlement_mouth_state,
+            a.remarks,
+            b.id AS Sid,
+            b.summary,
+            b.expense_account,
+            b.debit_amount,
+            b.credit_amount,
+            b.foreign_key,
+            b.rownum,
+            b.original_currency,
+            c.id AS Tid,
+            c.foreign_key_id,
+            c.approval_status,
+            c.approval_people,
+            c.posting_status,
+            c.posting_people,
+            d.account_code,
+            d.subiect_name
+        FROM
+             cer_entry a
+         LEFT JOIN cer_entry_schedule b ON a.id = b.foreign_key
+         LEFT JOIN cer_tag c ON a.id = c.foreign_key_id
+         LEFT JOIN cer_expense_account d ON b.expense_account=d.account_code
+        <where>
+             b.foreign_key in
+            <foreach collection="listId" index="index" item="item" open="(" separator="," close=")">
+                 #{item}
+            </foreach>
+         </where>
+    </select>
+    <!--获取所有用户信息-->
+    <select id="selectUsers" resultType="cn.stylefeng.guns.modular.system.model.User">
+        SELECT
+           id,
+           NAME,
+           account
+        FROM
+             sys_user
+        <where>
+            status='1'
+        </where>
+    </select>
+    <!--删除凭证-->
+    <select id="deleteEntry">
+    DELETE cer_entry,
+     cer_entry_schedule
+    FROM
+        cer_entry
+    LEFT JOIN cer_entry_schedule ON cer_entry.id = cer_entry_schedule.foreign_key
+    WHERE
+        cer_entry.id in
+        <foreach collection="listMap" item="item" open="(" separator="," close=")">
+          #{item.entryId}
+        </foreach>
+    </select>
+    <!--查询搜索方案-->
+    <select id="selectSearchList" resultType="map">
+        SELECT
+               id,
+               search_remark
+        FROM
+             cer_search
+        <where>
+            <if test="map.staff_id != null and map.staff_id != ''">
+                staff_id=#{map.staff_id}
+            </if>
+        </where>
+    </select>
+
+
+    <!--查询搜索方案-->
+    <select id="selectSearchMap" resultType="map">
+        SELECT
+            id,
+            staff_id,
+            search_period_start,
+            search_period_end,
+            search_approval_status,
+            search_posting_status,
+            DATE_FORMAT(search_business_date_start,'%Y-%m-%d') as search_business_date_start,
+            DATE_FORMAT(search_business_date_end,'%Y-%m-%d') as search_business_date_end,
+            search_document_word,
+            search_prepared_by,
+            search_approval_people,
+            search_posting_people,
+            search_summary,
+            search_expense_account,
+            search_start_document_number,
+            search_end_document_number,
+            search_start_credit_amount,
+            search_end_credit_amount,
+            search_start_debit_amount,
+            search_end_debit_amount,
+            search_start_original_currency,
+            search_end_original_currency,
+            search_remark
+        FROM
+          cer_search
+        <where>
+            <if test="map.id != null and map.id != ''">
+                id=#{map.id}
+            </if>
+        </where>
+    </select>
+
+    <!--保存搜索方案-->
+    <insert id="saveSearch">
+        INSERT INTO cer_search
+                (
+                <if test="map.staff_id != null and map.staff_id != ''">
+                    staff_id
+                </if>
+                <if test="map.start_period != null and map.start_period != ''">
+                    ,search_period_start
+                </if>
+                <if test="map.end_period != null and map.end_period != ''">
+                    ,search_period_end
+                </if>
+                <if test="map.approval_status != null and map.approval_status != ''">
+                    ,search_approval_status
+                </if>
+                <if test="map.posting_status != null and map.posting_status != ''">
+                    ,search_posting_status
+                </if>
+                <if test="map.business_date_start != null and map.business_date_start != ''">
+                    ,search_business_date_start
+                </if>
+                <if test="map.business_date_end != null and map.business_date_end != ''">
+                    ,search_business_date_end
+                </if>
+                <if test="map.document_word != null and map.document_word != ''">
+                    ,search_document_word
+                </if>
+                <if test="map.prepared_by != null and map.prepared_by != ''">
+                    ,search_prepared_by
+                </if>
+                <if test="map.approval_people != null and map.approval_people != ''">
+                    ,search_approval_people
+                </if>
+                <if test="map.posting_people != null and map.posting_people != ''">
+                    ,search_posting_people
+                </if>
+                <if test="map.summary != null and map.summary != ''">
+                    ,search_summary
+                </if>
+                <if test="map.expense_account != null and map.expense_account != ''">
+                    ,search_expense_account
+                </if>
+                <if test="map.start_document_number != null and map.start_document_number != ''">
+                    ,search_start_document_number
+                </if>
+                <if test="map.end_document_number != null and map.end_document_number != ''">
+                    ,search_end_document_number
+                </if>
+                <if test="map.start_credit_amount != null and map.start_credit_amount != ''">
+                    ,search_start_credit_amount
+                </if>
+                <if test="map.end_credit_amount != null and map.end_credit_amount != ''">
+                    ,search_end_credit_amount
+                </if>
+                <if test="map.start_debit_amount != null and map.start_debit_amount != ''">
+                    ,search_start_debit_amount
+                </if>
+                <if test="map.end_debit_amount != null and map.end_debit_amount != ''">
+                    ,search_end_debit_amount
+                </if>
+                <if test="map.start_original_currency != null and map.start_original_currency != ''">
+                    ,search_start_original_currency
+                </if>
+                <if test="map.end_original_currency != null and map.end_original_currency != ''">
+                    ,search_end_original_currency
+                </if>
+                <if test="map.search_remark != null and map.search_remark != ''">
+                    ,search_remark
+                </if>
+                )
+        VALUES
+               (
+                <if test="map.staff_id != null and map.staff_id != ''">
+                     #{map.staff_id}
+                </if>
+                <if test="map.start_period != null and map.start_period != ''">
+                    ,#{map.start_period}
+                </if>
+                <if test="map.end_period != null and map.end_period != ''">
+                   , #{map.end_period}
+                </if>
+                <if test="map.approval_status != null and map.approval_status != ''">
+                   ,#{map.approval_status}
+                </if>
+                <if test="map.posting_status != null and map.posting_status != ''">
+                   ,#{map.posting_status}
+                </if>
+                <if test="map.business_date_start != null and map.business_date_start != ''">
+                   ,#{map.business_date_start}
+                </if>
+                <if test="map.business_date_end != null and map.business_date_end != ''">
+                    ,#{map.business_date_end}
+                </if>
+                <if test="map.document_word != null and map.document_word != ''">
+                   ,#{map.document_word}
+                </if>
+                <if test="map.prepared_by != null and map.prepared_by != ''">
+                   ,#{map.prepared_by}
+                </if>
+                <if test="map.approval_people != null and map.approval_people != ''">
+                   ,#{map.approval_people}
+                </if>
+                <if test="map.posting_people != null and map.posting_people != ''">
+                   ,#{map.posting_people}
+                </if>
+                <if test="map.summary != null and map.summary != ''">
+                   ,#{map.summary}
+                </if>
+                <if test="map.expense_account != null and map.expense_account != ''">
+                   ,#{map.expense_account}
+                </if>
+                <if test="map.start_document_number != null and map.start_document_number != ''">
+                   ,#{map.start_document_number}
+                </if>
+                <if test="map.end_document_number != null and map.end_document_number != ''">
+                   ,#{map.end_document_number}
+                </if>
+                <if test="map.start_credit_amount != null and map.start_credit_amount != ''">
+                   ,#{map.start_credit_amount}
+                </if>
+                <if test="map.end_credit_amount != null and map.end_credit_amount != ''">
+                   ,#{map.end_credit_amount}
+                </if>
+                <if test="map.start_debit_amount != null and map.start_debit_amount != ''">
+                   ,#{map.start_debit_amount}
+                </if>
+                <if test="map.end_debit_amount != null and map.end_debit_amount != ''">
+                   ,#{map.end_debit_amount}
+               </if>
+                <if test="map.start_original_currency != null and map.start_original_currency != ''">
+                   ,#{map.start_original_currency}
+                </if>
+                <if test="map.end_original_currency != null and map.end_original_currency != ''">
+                   ,#{map.end_original_currency}
+                </if>
+                <if test="map.search_remark != null and map.search_remark != ''">
+                   ,#{map.search_remark}
+                </if>
+               )
+    </insert>
+
+    <!--删除搜索方案-->
+    <delete id="deleteSearch">
+        DELETE FROM cer_search WHERE id=#{id}
+    </delete>
+
+    <!--查询父节点 凭证统计-->
+    <select id="findstatisticalList" resultType="map">
+        SELECT DISTINCT
+        a.id,
+        a.id AS code,
+        0 AS pcode,
+        DATE_FORMAT(a.business_date,'%Y-%m-%d') as business_date,
+        a.sequence_number,
+        a.document_word,
+        a.documents_number,
+        a.document_number,
+        a.prepared_by,
+        a.create_time,
+        a.settlement_state,
+        a.lump_sum,
+        a.period,
+        a.settlement_mouth_state,
+        a.remarks,
+        b.id AS Sid,
+        b.summary,
+        b.expense_account,
+        null as debit_amount,
+        null as credit_amount,
+        b.foreign_key,
+        b.rownum,
+        b.original_currency,
+        c.id AS Tid,
+        c.foreign_key_id,
+        c.approval_status,
+        c.approval_people,
+        c.posting_status,
+        c.posting_people
+        FROM
+        cer_entry a
+        LEFT JOIN cer_entry_schedule b ON a.id = b.foreign_key
+        LEFT JOIN cer_tag c ON a.id = c.foreign_key_id
+        <where>
+            <include refid="Base_Seach_fild_Cer_entry"></include>
+        </where>
+        group by a.id order by a.create_time desc
+    </select>
+
+    <!--查询会计期间是否有数据-->
+    <select id="findAccountingPeriod" resultType="String">
+        SELECT
+            count(id)
+        FROM
+            cer_entry
+        WHERE
+            period = #{period} AND settlement_years_state = '1'
+    </select>
+
+    <!--查询当前期间所有数据是否以及进行损益-->
+    <select id="profitLoss" resultType="String">
+        SELECT
+         settlement_state
+        FROM
+            cer_entry
+        WHERE
+            period = #{period} AND state = '1' AND settlement_state = '0'
+            group by settlement_state
+    </select>
+
+    <!--反过账-->
+    <update id="antiSettlement" >
+        UPDATE cer_entry AS e
+        LEFT JOIN cer_tag AS t ON t.foreign_key_id = e.id
+        SET t.posting_status = null,
+           t.posting_people = null
+        WHERE
+            e.period = #{period}
+    </update>
+
+    <!--删除损益凭证根据会计期间-->
+    <delete id="deleteProfitEntry">
+        DELETE FROM
+            cer_entry,
+            cer_entry_schedule USING cer_entry,
+            cer_entry_schedule
+        WHERE
+            cer_entry.id = cer_entry_schedule.foreign_key
+        AND cer_entry.period = #{period}
+        AND cer_entry.document_word = '1'
+        AND cer_entry.settlement_state = '0'
+    </delete>
+    <!--查询当前会计期间是否已结账-->
+    <select id="settleAccounts" resultType="String">
+        SELECT
+            settlement_mouth_state
+        FROM
+            cer_entry
+            WHERE
+                period = #{period} AND settlement_mouth_state = '0' AND settlement_years_state = '1'
+        GROUP BY settlement_mouth_state
+    </select>
+    <!--未结账的数据进行限制其操作-->
+    <update id="limitOperation">
+        UPDATE
+            cer_entry
+        set
+            state = '0'
+        WHERE
+            settlement_mouth_state = '1'
+    </update>
+
+    <!--删除结账状态-->
+    <update id="removeSettleAccountsState">
+        UPDATE
+            cer_entry
+        SET
+            settlement_mouth_state = '1'
+        WHERE
+            period = #{period}
+    </update>
+    <!--结帐处理-->
+    <update id="settleAccountsDispose">
+        UPDATE
+            cer_entry
+        SET
+            settlement_mouth_state = '0'
+        WHERE
+            period = '1'
+    </update>
+    <!--年结账-->
+    <update id="yearsAccounts">
+        UPDATE
+            cer_entry
+        SET
+            settlement_years_state = '0'
+        WHERE
+            settlement_years_state = '1'
+    </update>
+    <!--查询未进行月结账的数据-->
+    <select id="selectNotMouthSettlement" resultType="int">
+        SELECT
+            count(id)
+        FROM
+            cer_entry
+        WHERE
+            settlement_mouth_state = "1"
+    </select>
+</mapper>

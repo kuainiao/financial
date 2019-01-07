@@ -1,0 +1,30 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+            <div class="row">
+                <!--该DIV 用于展示保存，预览，打印，插入，删除，复原功能键展示-->
+                <div style="width: 100%;height: 8%;">
+                    <table style="width: 100%;height: 8%;font-weight: bold; font-size: 15px" cellspacing="0" id="accounting">
+                    </table>
+                    <#button name="确定" icon="btn-info" clickFun="determine()" space="true"/>
+                    <#button name="取消" icon="btn-danger" clickFun="remove()" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/finance/entry/other_accounting.js"></script>
+<!--select2插件-->
+<script src="${ctxPath}/static/js/select/select2.min.js"></script>
+<!--select2插件-->
+<link rel="stylesheet" href="${ctxPath}/static/js/select/select2.min.css">
+<script>
+    $(function () {
+        $("#test").select2({
+            tags: true,
+        });
+    })
+</script>
+@}

@@ -1,0 +1,32 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+            <!--内容开始-->
+            <div class="container">
+                <ul class="nav nav-tabs" id="subjectsClass">
+                    <li class="active"><a onclick="Subject.activeMenu(this,'1')" ondblclick="Subject.getSubjectVal('1')">资产</a></li>
+                    <li><a onclick="Subject.activeMenu(this,'2')" ondblclick="Subject.getSubjectVal('2')">负债</a></li>
+                    <li><a onclick="Subject.activeMenu(this,'3')" ondblclick="Subject.getSubjectVal('3')">共同</a></li>
+                    <li><a onclick="Subject.activeMenu(this,'4')" ondblclick="Subject.getSubjectVal('4')">权益</a></li>
+                    <li><a onclick="Subject.activeMenu(this,'5')" ondblclick="Subject.getSubjectVal('5')">成本</a></li>
+                    <li><a onclick="Subject.activeMenu(this,'6')" ondblclick="Subject.getSubjectVal('6')">损益</a></li>
+                </ul>
+                ​
+                <div class="tab-content">
+                    <div class="panel-body dept-tree">
+                        <input type="text" id="key" value="" style="width: 30%;margin-left: 3%;height: 5%;margin-top: -1px"/>
+                        <#button name="搜索" icon="fa-search" clickFun="search_ztree('deptTree', 'key',true)" btnCss="primary btn-xs"/>
+                        <ul id="deptTree" class="ztree"></ul>
+                    </div>
+                </div>
+            </div>
+            ​
+            <!--内容结束-->
+        </div>
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/finance/expenseAccount/subject.js"></script>
+<script src="${ctxPath}/static/modular/finance/common/ztree_object.js"></script>
+<script src="${ctxPath}/static/modular/finance/expenseAccount/search_ztree.js"></script>
+@}

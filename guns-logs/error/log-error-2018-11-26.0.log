@@ -1,0 +1,482 @@
+2018-11-26 10:22:44.054 ERROR 12348 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:22:44.223 ERROR 12348 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:22:44.243 ERROR 12348 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:23:57.369 ERROR 12348 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:23:57.981 ERROR 12348 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:23:57.983 ERROR 12348 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:23:57.983 ERROR 12348 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:23:57.991 ERROR 12348 --- [http-nio-8888-exec-7] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:23:59.668 ERROR 12348 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:23:59.688 ERROR 12348 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:30:53.376 ERROR 12348 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:33:38.398 ERROR 12348 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:36:13.715 ERROR 12348 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:44:36.355 ERROR 12348 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:54:03.980 ERROR 12348 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:55:19.364 ERROR 8620 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:19.515 ERROR 8620 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:19.528 ERROR 8620 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:51.423 ERROR 8620 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:51.961 ERROR 8620 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:51.962 ERROR 8620 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:51.963 ERROR 8620 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:51.965 ERROR 8620 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:55.551 ERROR 8620 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 10:55:55.585 ERROR 8620 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:57:10.356 ERROR 8620 --- [http-nio-8888-exec-10] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:58:35.716 ERROR 8620 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:59:10.102 ERROR 8620 --- [http-nio-8888-exec-8] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:59:44.333 ERROR 8620 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 10:59:59.078 ERROR 8620 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:01:11.044 ERROR 8620 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:01:58.266 ERROR 8620 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:05:23.872 ERROR 8620 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:08:51.450 ERROR 8620 --- [http-nio-8888-exec-7] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:11:58.824 ERROR 8620 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:12:50.759 ERROR 8620 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:13:22.413 ERROR 8620 --- [http-nio-8888-exec-10] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:13:52.211 ERROR 8620 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:14:29.260 ERROR 8620 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:14:48.761 ERROR 8620 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:15:13.817 ERROR 8620 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:15:28.368 ERROR 8620 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:15:44.586 ERROR 8620 --- [http-nio-8888-exec-10] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:16:34.373 ERROR 8620 --- [http-nio-8888-exec-10] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:17:49.122 ERROR 8620 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:21:59.815 ERROR 8620 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:30:45.695 ERROR 8620 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:31:02.800 ERROR 8620 --- [http-nio-8888-exec-7] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:31:21.586 ERROR 8620 --- [http-nio-8888-exec-10] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:42:34.204 ERROR 8620 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:43:09.000 ERROR 8620 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:43:42.573 ERROR 8620 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:44:07.462 ERROR 8620 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:44:27.832 ERROR 8620 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:45:12.879 ERROR 8620 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:45:13.319 ERROR 8620 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 11:46:19.064 ERROR 8620 --- [http-nio-8888-exec-7] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:47:04.045 ERROR 8620 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:50:04.729 ERROR 8620 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:50:42.738 ERROR 8620 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:51:22.779 ERROR 8620 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:53:33.488 ERROR 8620 --- [http-nio-8888-exec-8] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:57:29.457 ERROR 8620 --- [http-nio-8888-exec-7] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 11:59:39.964 ERROR 8620 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 14:02:11.841 ERROR 8620 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 14:06:42.519 ERROR 8620 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 14:12:24.950 ERROR 2200 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:12:25.137 ERROR 2200 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:12:25.174 ERROR 2200 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:13:04.162 ERROR 2200 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:13:04.888 ERROR 2200 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:13:04.889 ERROR 2200 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:13:06.869 ERROR 2200 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:13:06.894 ERROR 2200 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:13:06.921 ERROR 2200 --- [http-nio-8888-exec-8] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:13:06.929 ERROR 2200 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 14:17:13.289 ERROR 2200 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 14:17:13.631 ERROR 2200 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 14:17:46.096 ERROR 2200 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 14:58:46.946 ERROR 1992 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:58:47.111 ERROR 1992 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:58:47.125 ERROR 1992 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:59:34.258 ERROR 1992 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:59:34.812 ERROR 1992 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:59:34.813 ERROR 1992 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:59:34.816 ERROR 1992 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:59:34.819 ERROR 1992 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:59:39.228 ERROR 1992 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 14:59:39.250 ERROR 1992 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:03:26.256 ERROR 14340 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:26.408 ERROR 14340 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:26.422 ERROR 14340 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:38.647 ERROR 14340 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:39.188 ERROR 14340 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:39.191 ERROR 14340 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:39.194 ERROR 14340 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:39.199 ERROR 14340 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:40.651 ERROR 14340 --- [http-nio-8888-exec-7] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:03:40.665 ERROR 14340 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:05:42.400 ERROR 2056 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:05:42.554 ERROR 2056 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:05:42.568 ERROR 2056 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:06:03.387 ERROR 2056 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:06:04.135 ERROR 2056 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:06:04.143 ERROR 2056 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:06:04.153 ERROR 2056 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:06:04.156 ERROR 2056 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:06:05.548 ERROR 2056 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:06:05.595 ERROR 2056 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:08:12.287 ERROR 15004 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:08:12.437 ERROR 15004 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:08:12.450 ERROR 15004 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:09:42.760 ERROR 15004 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:09:43.383 ERROR 15004 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:09:43.387 ERROR 15004 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:09:43.401 ERROR 15004 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:09:43.401 ERROR 15004 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:09:45.233 ERROR 15004 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:09:45.244 ERROR 15004 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:09:45.376 ERROR 15004 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:11:14.759 ERROR 3236 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:14.913 ERROR 3236 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:14.927 ERROR 3236 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:28.010 ERROR 3236 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:28.470 ERROR 3236 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:28.471 ERROR 3236 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:28.472 ERROR 3236 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:28.472 ERROR 3236 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:32.348 ERROR 3236 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:11:32.354 ERROR 3236 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:14:38.173 ERROR 5780 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:38.322 ERROR 5780 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:38.335 ERROR 5780 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:46.481 ERROR 5780 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:47.066 ERROR 5780 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:47.068 ERROR 5780 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:47.087 ERROR 5780 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:47.093 ERROR 5780 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:50.422 ERROR 5780 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:14:50.472 ERROR 5780 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:14:50.763 ERROR 5780 --- [http-nio-8888-exec-7] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:29:09.466 ERROR 4280 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:09.690 ERROR 4280 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:09.715 ERROR 4280 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:16.250 ERROR 4280 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:16.755 ERROR 4280 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:16.755 ERROR 4280 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:16.756 ERROR 4280 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:16.757 ERROR 4280 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:16.759 ERROR 4280 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:29:19.132 ERROR 4280 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:29:19.324 ERROR 4280 --- [http-nio-8888-exec-10] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:35:04.654 ERROR 4280 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:50:33.100 ERROR 5128 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:50:33.249 ERROR 5128 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:50:33.260 ERROR 5128 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:50:42.884 ERROR 5128 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:50:45.478 ERROR 5128 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:50:45.493 ERROR 5128 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:50:51.825 ERROR 5128 --- [http-nio-8888-exec-10] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 15:56:45.472 ERROR 5128 --- [http-nio-8888-exec-10] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:56:45.474 ERROR 5128 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:56:45.474 ERROR 5128 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 15:56:45.475 ERROR 5128 --- [http-nio-8888-exec-9] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:32:30.283 ERROR 5128 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 16:39:37.497 ERROR 5128 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 16:39:51.130 ERROR 5128 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 16:40:14.058 ERROR 5128 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 16:54:04.253 ERROR 10336 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:04.426 ERROR 10336 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:04.438 ERROR 10336 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:13.077 ERROR 10336 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:13.570 ERROR 10336 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:13.571 ERROR 10336 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:13.571 ERROR 10336 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:13.572 ERROR 10336 --- [http-nio-8888-exec-7] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:15.869 ERROR 10336 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 16:54:15.885 ERROR 10336 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 16:55:07.256 ERROR 10336 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 17:01:22.689 ERROR 14900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:22.848 ERROR 14900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:22.862 ERROR 14900 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:39.691 ERROR 14900 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:40.184 ERROR 14900 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:40.185 ERROR 14900 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:40.186 ERROR 14900 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:40.189 ERROR 14900 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:42.647 ERROR 14900 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-26 17:01:42.657 ERROR 14900 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 17:09:20.995 ERROR 14900 --- [http-nio-8888-exec-9] c.s.g.core.aop.GlobalExceptionHandler    : 运行时异常:
+
+java.lang.NullPointerException: null
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController.list(ExpenseAccountController.java:87)
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController$$FastClassBySpringCGLIB$$1dce64f8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.interceptor.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController$$EnhancerBySpringCGLIB$$d804de88.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-11-26 17:09:28.642 ERROR 14900 --- [http-nio-8888-exec-4] c.s.g.core.aop.GlobalExceptionHandler    : 运行时异常:
+
+java.lang.NullPointerException: null
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController.list(ExpenseAccountController.java:87)
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController$$FastClassBySpringCGLIB$$1dce64f8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.interceptor.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:44)
+	at sun.reflect.GeneratedMethodAccessor133.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController$$EnhancerBySpringCGLIB$$d804de88.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-11-26 17:09:45.477 ERROR 14900 --- [http-nio-8888-exec-3] c.s.g.core.aop.GlobalExceptionHandler    : 运行时异常:
+
+java.lang.NullPointerException: null
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController.list(ExpenseAccountController.java:87)
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController$$FastClassBySpringCGLIB$$1dce64f8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.interceptor.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:44)
+	at sun.reflect.GeneratedMethodAccessor133.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.controller.ExpenseAccountController$$EnhancerBySpringCGLIB$$d804de88.list(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-11-26 17:13:06.796 ERROR 14900 --- [http-nio-8888-exec-8] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 17:13:20.312 ERROR 14900 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 17:13:50.645 ERROR 14900 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-26 17:14:45.644 ERROR 14900 --- [http-nio-8888-exec-10] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png

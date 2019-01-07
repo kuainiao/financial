@@ -1,0 +1,735 @@
+<<<<<<< .mine
+2018-12-13 09:32:27.170 ERROR 9460 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:32:27.397 ERROR 9460 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:32:27.438 ERROR 9460 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:37:24.752 ERROR 3956 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:37:24.915 ERROR 3956 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:37:24.930 ERROR 3956 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:37:42.005 ERROR 3956 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:37:49.718 ERROR 3956 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:38:00.853 ERROR 3956 --- [http-nio-8888-exec-7] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:45:40.473 ERROR 9292 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:45:40.627 ERROR 9292 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:45:40.641 ERROR 9292 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:45:57.281 ERROR 9292 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:46:01.872 ERROR 9292 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:47:54.578 ERROR 9292 --- [http-nio-8888-exec-7] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:47:54.579 ERROR 9292 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:47:54.580 ERROR 9292 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:47:54.583 ERROR 9292 --- [http-nio-8888-exec-8] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 09:49:10.499 ERROR 9292 --- [http-nio-8888-exec-5] c.s.g.core.aop.GlobalExceptionHandler    : 运行时异常:
+
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+### SQL: insert into cer_entry_schedule         (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+### Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values; nested exception is java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy93.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy107.insertGlmSchedule(Unknown Source)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl.insertGlm(EntryAddServiceImpl.java:64)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl$$FastClassBySpringCGLIB$$12db35dc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl$$EnhancerBySpringCGLIB$$66ba79a.insertGlm(<generated>)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController.add(EntryAddController.java:72)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController$$FastClassBySpringCGLIB$$452d71d2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.interceptor.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:44)
+	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.aop.LogAop.recordSysLog(LogAop.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController$$EnhancerBySpringCGLIB$$d0b6262.add(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:798)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:251)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy130.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.plugins.PaginationInterceptor.intercept(PaginationInterceptor.java:98)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy128.prepare(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at cn.stylefeng.roses.core.datascope.DataScopeInterceptor.intercept(DataScopeInterceptor.java:35)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy128.prepare(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor.intercept(OptimisticLockerInterceptor.java:71)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy127.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 119 common frames omitted
+Caused by: com.alibaba.druid.sql.parser.ParserException: syntax error, expect ')', pos 165, line 2, column 136, token EOF
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseValueClause(SQLStatementParser.java:3220)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseInsert(MySqlStatementParser.java:2553)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseInsert(MySqlStatementParser.java:47)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:167)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:83)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:785)
+	... 164 common frames omitted
+
+2018-12-13 09:49:25.324 ERROR 9292 --- [http-nio-8888-exec-8] c.s.g.core.aop.GlobalExceptionHandler    : 运行时异常:
+
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+### SQL: insert into cer_entry_schedule         (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+### Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values; nested exception is java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy93.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy107.insertGlmSchedule(Unknown Source)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl.insertGlm(EntryAddServiceImpl.java:64)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl$$FastClassBySpringCGLIB$$12db35dc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl$$EnhancerBySpringCGLIB$$66ba79a.insertGlm(<generated>)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController.add(EntryAddController.java:72)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController$$FastClassBySpringCGLIB$$452d71d2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.interceptor.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:44)
+	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.aop.LogAop.recordSysLog(LogAop.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController$$EnhancerBySpringCGLIB$$d0b6262.add(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:798)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:251)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy130.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.plugins.PaginationInterceptor.intercept(PaginationInterceptor.java:98)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy128.prepare(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at cn.stylefeng.roses.core.datascope.DataScopeInterceptor.intercept(DataScopeInterceptor.java:35)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy128.prepare(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor.intercept(OptimisticLockerInterceptor.java:71)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy127.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 119 common frames omitted
+Caused by: com.alibaba.druid.sql.parser.ParserException: syntax error, expect ')', pos 165, line 2, column 136, token EOF
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseValueClause(SQLStatementParser.java:3220)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseInsert(MySqlStatementParser.java:2553)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseInsert(MySqlStatementParser.java:47)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:167)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:83)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:785)
+	... 164 common frames omitted
+
+2018-12-13 09:54:30.935 ERROR 9292 --- [http-nio-8888-exec-3] c.s.g.core.aop.GlobalExceptionHandler    : 运行时异常:
+
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+### SQL: insert into cer_entry_schedule         (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+### Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values; nested exception is java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:89)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy93.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy107.insertGlmSchedule(Unknown Source)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl.insertGlm(EntryAddServiceImpl.java:64)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl$$FastClassBySpringCGLIB$$12db35dc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.service.impl.EntryAddServiceImpl$$EnhancerBySpringCGLIB$$66ba79a.insertGlm(<generated>)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController.add(EntryAddController.java:72)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController$$FastClassBySpringCGLIB$$452d71d2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.interceptor.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:44)
+	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.stylefeng.guns.core.aop.LogAop.recordSysLog(LogAop.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:174)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.stylefeng.guns.modular.finance.controller.EntryAddController$$EnhancerBySpringCGLIB$$d0b6262.add(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at cn.stylefeng.roses.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: sql injection violation, syntax error: syntax error, expect ')', pos 165, line 2, column 136, token EOF : insert into cer_entry_schedule
+        (summary,expense_account,debit_amount,credit_amount,foreign_key,original_currency,rownum,contacts_dnit,department,staff)values
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:798)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:251)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at sun.reflect.GeneratedMethodAccessor143.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy130.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.plugins.PaginationInterceptor.intercept(PaginationInterceptor.java:98)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy128.prepare(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at cn.stylefeng.roses.core.datascope.DataScopeInterceptor.intercept(DataScopeInterceptor.java:35)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy128.prepare(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor.intercept(OptimisticLockerInterceptor.java:71)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy127.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 119 common frames omitted
+Caused by: com.alibaba.druid.sql.parser.ParserException: syntax error, expect ')', pos 165, line 2, column 136, token EOF
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseValueClause(SQLStatementParser.java:3220)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseInsert(MySqlStatementParser.java:2553)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseInsert(MySqlStatementParser.java:47)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:167)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:83)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:785)
+	... 164 common frames omitted
+
+2018-12-13 11:32:13.298 ERROR 3372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 11:32:13.525 ERROR 3372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 11:32:13.542 ERROR 3372 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 11:32:22.691 ERROR 3372 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 11:32:23.373 ERROR 3372 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 11:32:23.395 ERROR 3372 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 11:32:25.383 ERROR 3372 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 11:32:25.437 ERROR 3372 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 11:32:25.438 ERROR 3372 --- [http-nio-8888-exec-7] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:52:18.093 ERROR 16000 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:52:18.359 ERROR 16000 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:52:18.387 ERROR 16000 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:52:29.831 ERROR 16000 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:52:30.402 ERROR 16000 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:53:01.387 ERROR 16000 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:53:01.392 ERROR 16000 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:53:01.453 ERROR 16000 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-13 15:53:01.456 ERROR 16000 --- [http-nio-8888-exec-10] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+||||||| .r165
+2018-11-12 12:02:22.138 ERROR 13552 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 12:02:22.317 ERROR 13552 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 12:02:22.332 ERROR 13552 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:02:00.036 ERROR 13552 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:02:00.326 ERROR 13552 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:02:00.327 ERROR 13552 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:02:00.332 ERROR 13552 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:02:00.333 ERROR 13552 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:02:02.046 ERROR 13552 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:02:02.081 ERROR 13552 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:03:44.068 ERROR 13552 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:04:02.368 ERROR 16240 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:02.532 ERROR 16240 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:02.545 ERROR 16240 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:16.250 ERROR 16240 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:16.529 ERROR 16240 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:16.532 ERROR 16240 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:16.537 ERROR 16240 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:16.540 ERROR 16240 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:19.743 ERROR 16240 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:04:19.773 ERROR 16240 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:11:20.610 ERROR 1032 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:20.812 ERROR 1032 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:20.827 ERROR 1032 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:34.978 ERROR 1032 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:35.254 ERROR 1032 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:35.255 ERROR 1032 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:35.256 ERROR 1032 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:35.257 ERROR 1032 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:36.756 ERROR 1032 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:11:36.785 ERROR 1032 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:15:27.609 ERROR 16020 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:27.775 ERROR 16020 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:27.789 ERROR 16020 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:34.213 ERROR 16020 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:34.513 ERROR 16020 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:34.514 ERROR 16020 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:34.515 ERROR 16020 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:34.517 ERROR 16020 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:38.142 ERROR 16020 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:38.151 ERROR 16020 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:15:58.608 ERROR 15920 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:58.786 ERROR 15920 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:15:58.800 ERROR 15920 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:16:05.854 ERROR 15920 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:16:06.175 ERROR 15920 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:16:06.176 ERROR 15920 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:16:06.176 ERROR 15920 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:16:06.176 ERROR 15920 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:16:06.545 ERROR 15920 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:16:06.546 ERROR 15920 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:16:07.846 ERROR 15920 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:17:13.373 ERROR 15636 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:13.537 ERROR 15636 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:13.550 ERROR 15636 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:23.540 ERROR 15636 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:23.840 ERROR 15636 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:23.843 ERROR 15636 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:23.845 ERROR 15636 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:23.850 ERROR 15636 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:26.393 ERROR 15636 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:17:26.409 ERROR 15636 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:18:32.837 ERROR 15636 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:24:40.674 ERROR 15636 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:25:02.474 ERROR 13024 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:02.632 ERROR 13024 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:02.646 ERROR 13024 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:21.209 ERROR 13024 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:21.549 ERROR 13024 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:21.551 ERROR 13024 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:21.557 ERROR 13024 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:21.559 ERROR 13024 --- [http-nio-8888-exec-3] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:23.477 ERROR 13024 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:25:23.458 ERROR 13024 --- [http-nio-8888-exec-6] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-11-12 14:25:48.601 ERROR 13024 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+2018-11-12 14:25:58.235 ERROR 13024 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\gz\AppData\Local\Temp\62122e93-7df1-4694-997e-ba8fbb628590.png
+=======
+2018-12-12 09:00:13.121 ERROR 15944 --- [http-nio-8888-exec-7] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 09:00:35.064 ERROR 15944 --- [http-nio-8888-exec-3] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 09:00:36.158 ERROR 15944 --- [http-nio-8888-exec-8] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 09:00:36.801 ERROR 15944 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 09:01:35.942 ERROR 15944 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 09:20:57.359 ERROR 15944 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 09:22:12.612 ERROR 15944 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 09:29:48.530 ERROR 15944 --- [http-nio-8888-exec-8] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 09:30:39.477 ERROR 15944 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 10:10:19.268 ERROR 15944 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 10:11:00.669 ERROR 15944 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 10:16:59.245 ERROR 15944 --- [http-nio-8888-exec-2] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 10:35:00.549 ERROR 15944 --- [http-nio-8888-exec-9] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 10:38:10.702 ERROR 15944 --- [http-nio-8888-exec-6] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 11:07:37.476 ERROR 15944 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 11:33:04.341 ERROR 13084 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 11:34:36.399 ERROR 13084 --- [http-nio-8888-exec-1] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 14:06:50.884 ERROR 13084 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 14:30:37.890 ERROR 13084 --- [http-nio-8888-exec-4] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+2018-12-12 15:15:25.431 ERROR 13084 --- [http-nio-8888-exec-5] cn.stylefeng.roses.core.util.FileUtil    : 文件未找到！C:\Users\00000\AppData\Local\Temp\5aaca485-ceea-4d30-888a-ca45ad59b2d2.png
+>>>>>>> .r171
+2018-12-14 08:45:56.817 ERROR 13324 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 08:45:57.156 ERROR 13324 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 08:45:57.209 ERROR 13324 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 08:48:28.704 ERROR 596 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 08:48:28.856 ERROR 596 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 08:48:28.870 ERROR 596 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 08:48:53.339 ERROR 596 --- [http-nio-8888-exec-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 08:48:54.466 ERROR 596 --- [http-nio-8888-exec-4] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 08:48:54.473 ERROR 596 --- [http-nio-8888-exec-5] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 09:01:18.404 ERROR 744 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 09:01:18.643 ERROR 744 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 09:01:18.660 ERROR 744 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 09:02:16.270 ERROR 744 --- [http-nio-8888-exec-2] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-12-14 09:02:42.288 ERROR 744 --- [http-nio-8888-exec-9] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.29] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
